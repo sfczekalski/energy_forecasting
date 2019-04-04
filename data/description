@@ -1,0 +1,39 @@
+Kolumny
+
+	Nr odczytu;
+		-;
+	Data czas;
+		czas;
+	Energia;
+		kWh;
+	T zewn.;
+		Â°C;
+	V wiatr;
+		m/s;
+	Wilg.;
+		%;
+	Zachm;
+		oktan;
+	Dlug. dnia
+		godz.;
+	;Typ dnia;
+		-;
+	Pora roku;
+		-;
+
+
+
+
+Kolumna typ dnia
+
+	1 : poniedziaĹek,wtorek,Ĺroda,czwartek
+	2 : piÄtek
+	3 : sobota
+	4 : niedziela, ĹwiÄta
+
+Kolumna pora roku
+
+	1 :  wiosna (marzec,kwiecieĹ,maj)
+	2 :  lato (czewiec, lipiec,sierpieĹ)
+	3 :  jesieĹ (wrzesieĹ,paĹşdziernik,listopad)
+	4 :  zima (grudzieĹ,styczeĹ,luty)
