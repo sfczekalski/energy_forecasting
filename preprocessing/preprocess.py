@@ -1,6 +1,10 @@
 import glob
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('fivethirtyeight')
+#import statsmodels.api as sm
+import matplotlib
 
 #zakres wierszy: 2929 - 20471 (2016.01.01 - 2017.12.31)
 start_row = 2929
@@ -8,7 +12,7 @@ end_row = 20472
 
 initial_df = pd.read_csv("../data/raw/odczyty_archh_urzadz_5004.csv",
                          sep=";",
-                         usecols=["Energia", "T zewn.", "V wiatr",
+                         usecols=["Data czas", "Energia", "T zewn.", "V wiatr",
                                   "Wilg.", "Zachm", "Dlug. dnia", "Typ dnia", "Pora roku"],
                          skiprows=lambda x: x in [1, 2],
                          dtype={
@@ -35,6 +39,4 @@ for filename in all_files:
 initial_df.index = np.arange(1, len(initial_df)+1)
 
 print(initial_df.head())
-initial_df.to_csv("data.csv")
-
-
+initial_df.to_csv("../data/preprocessed/data.csv", index=False)
